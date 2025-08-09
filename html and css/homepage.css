@@ -1,0 +1,165 @@
+.logo img{
+    width: 60px;
+    object-fit: cover;
+    padding-left: 20px;
+
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 15px;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    z-index: 1000;
+
+}
+.location-container .location{
+    border: 1px solid rgb(250, 192, 255);
+    border-radius: 8px;
+    padding: 7px 8px;
+    background-color: white;
+
+}
+.search-container{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+     
+}
+.search-container input{
+    width: 90%;
+    padding: 12px 40px 12px 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+}
+.search-container i {
+    position: absolute;
+    right: 25px;
+    font-size: 16px;
+    color: rgb(110, 109, 109);
+    cursor: pointer;
+}
+.account-section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-right: 20px;
+}
+.account-section a{
+    text-decoration: none;
+    color: black;
+    padding-top: 15px;
+    font-size: 18px;
+}
+.account-section a:hover{
+    color: rgb(148, 10, 152);
+    text-decoration: underline;
+}
+.account-section div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    row-gap: 0px;
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .location-container,
+    .search-container,
+    .account-section {
+        width: 100%;
+    }
+    .search-container input {
+        width: 50%;
+        position: relative;
+    }
+    .search-container i{
+        right: 250px;
+        position: absolute;
+    }
+}
+
+.categories-section {
+padding: 0px 10px;
+display: flex;
+align-items: center;
+gap: 20px;
+font-family:  Geneva,  sans-serif;
+
+}
+
+.category-menu {
+  list-style: none;
+  color: rgb(0, 0, 0);
+}
+
+.category-menu > li {
+  position: relative;
+}
+
+.category-menu a {
+  color: rgb(0, 0, 0);
+  padding: 0px 15px;
+  text-decoration: none;
+}
+.category-menu > li:hover a{
+   color:  rgb(148, 10, 152);
+}
+
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px  rgba(0, 0, 0, 0.2);
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  z-index: 100;
+  list-style: none;
+ 
+}
+
+.dropdown-menu li {
+  padding: 10px 15px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  text-decoration: underline;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.categories-section .jewelry a{
+    color: black;
+    text-decoration: none;
+
+}
+.categories-section .jewelry a:hover{
+    color:   rgb(148, 10, 152);
+    text-decoration: underline;
+}
+.homepage-pic img{
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+    position: relative;
+}
+.homepage-pic p{
+    position: absolute;
+    top: 300px;
+    left: 20px;
+    color: white;
+    font-size: 24px;
+  
+
+}
